@@ -1,0 +1,31 @@
+GET http://localhost:3000/persons HTTP/1.1
+
+###
+GET http://localhost:3000/persons?grade=3 HTTP/1.1
+
+###
+GET http://localhost:3000/persons?order=3 HTTP/1.1
+
+###
+GET http://localhost:3000/persons/shuffle/3 HTTP/1.1
+
+###
+POST http://localhost:3000/persons HTTP/1.1
+content-Type: application/json
+
+{
+  "name":"Sample",
+  "rolId":"66ba9746180df4dfc60783ee"
+}
+
+###
+PATCH http://localhost:3000/persons/66bab423c2ec7c52b80893de HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Sample new",
+  "rol":"66ba9746180df4dfc60783ee"
+}
+
+###
+DELETE http://localhost:3000/persons/66bab423c2ec7c52b80893de HTTP/1.1

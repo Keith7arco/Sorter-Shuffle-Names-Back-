@@ -1,0 +1,21 @@
+GET http://localhost:3000/roles HTTP/1.1
+
+###
+POST http://localhost:3000/roles HTTP/1.1
+content-Type: application/json
+
+{
+  "name":"Audio y Video",
+  "grade":3
+}
+
+###
+PATCH http://localhost:3000/roles/66ba9746180df4dfc60783ee HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Audio y Video"
+}
+
+###
+DELETE http://localhost:3000/roles/66ba9746180df4dfc60783ee HTTP/1.1
